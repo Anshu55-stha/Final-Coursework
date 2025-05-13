@@ -18,7 +18,7 @@ jobs:
         run: |
           docker login -u anshushr -p $DOCKERHUB_PAT
           docker build -t anshushr/mynginx .
-          docker push anshushr/myginx
+          docker push anshushr/mynginx
         env:
           DOCKERHUB_PAT: ${{ secrets.DOCKERHUB_PAT }}
 
